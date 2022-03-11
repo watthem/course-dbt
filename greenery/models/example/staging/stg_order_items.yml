@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_order_items
+    description: 'Product order including quantity, product_id and order_id'

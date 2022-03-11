@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: 'Customer orders including address_id, shipping information, and order status'

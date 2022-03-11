@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_users
+    description: 'Customer information including direct identifiers like name, email, phone numbers'
