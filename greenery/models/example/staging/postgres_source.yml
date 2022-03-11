@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: postgres_source
+    schema: public
+    database: dbt
+    
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+    
+    freshness:
+      warn_after: {count: 24, period: hour}
+      error_after: {count: 48, period: hour}
+
+    tables:
+      - name: addresses
+      - name: events
+      - name: orders
+      - name: order_items
+      - name: products
+      - name: promos
+      - name: users
